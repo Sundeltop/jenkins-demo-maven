@@ -14,7 +14,7 @@ public class SimpleApiTest {
                 .contentType(JSON)
                 .auth()
                 .oauth2(getAccessToken())
-                .get("http://localhost:8080/api/v1/default_personal/launch")
+                .get("http://172.18.0.6:8080/api/v1/default_personal/launch")
                 .then()
                 .log().all()
                 .statusCode(SC_OK);
@@ -27,7 +27,7 @@ public class SimpleApiTest {
                 .formParam("password", "1q2w3e")
                 .auth()
                 .basic("ui", "uiman")
-                .post("http://localhost:8080/uat/sso/oauth/token")
+                .post("http://172.18.0.6:8080/uat/sso/oauth/token")
                 .then()
                 .statusCode(SC_OK)
                 .extract()
