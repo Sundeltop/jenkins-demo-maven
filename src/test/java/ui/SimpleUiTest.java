@@ -1,8 +1,10 @@
+package ui;
+
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class MySimpleTest {
+public class SimpleUiTest {
 
     @Test
     void demo() {
